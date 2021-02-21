@@ -1,0 +1,90 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon-landing" viewBox="0 0 240 132" fill="none">
+      <rect x="0.3" y="0.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="116.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="26.3" width="239.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+    </symbol>
+    <symbol id="icon-blog" viewBox="0 0 240 132" fill="none">
+      <rect x="0.3" y="0.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="116.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="26.394" width="89.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="100.3" y="26.3" width="139.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+    </symbol>
+    <symbol id="icon-shop" viewBox="0 0 240 132" fill="none">
+      <rect x="0.3" y="0.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="116.3" width="239.4" height="15.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="0.3" y="26.3" width="73.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="83.3" y="26.3" width="73.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+      <rect x="166.3" y="26.3" width="73.4" height="79.4" stroke-width="0.6" stroke-dasharray="5 5" />
+    </symbol>
+    <symbol id="icon-add-btn" viewBox="0 0 40 40" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20C0 8.96 8.96 0 20 0C31.04 0 40 8.96 40 20C40 31.04 31.04 40 20 40C8.96 40 0 31.04 0 
+        20ZM22 22H30V18H22V9.99999H18V18H10V22H18V30H22V22Z" fill="#80CCF0" />
+    </symbol>
+    <symbol id="icon-delete-btn" viewBox="0 0 24 24" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 4H19V6H5V4H8.5L9.5 3H14.5L15.5 4ZM8 21C6.9 21 6 20.1 6 19V7H18V19C18 20.1 17.1 21 16 21H8Z" fill="white" />
+      <path d="M19 4H19.2V3.8H19V4ZM15.5 4L15.3586 4.14142L15.4172 4.2H15.5V4ZM19 6V6.2H19.2V6H19ZM5 6H4.8V6.2H5V6ZM5 4V3.8H4.8V4H5ZM8.5 4V4.2H8.58284L8.64142 4.14142L8.5 4ZM9.5 3V2.8H9.41716L9.35858 2.85858L9.5 3ZM14.5 3L14.6414 2.85858L14.5828 2.8H14.5V3ZM6 7V6.8H5.8V7H6ZM18 7H18.2V6.8H18V7ZM19 3.8H15.5V4.2H19V3.8ZM19.2 6V4H18.8V6H19.2ZM5 6.2H19V5.8H5V6.2ZM4.8 4V6H5.2V4H4.8ZM8.5 3.8H5V4.2H8.5V3.8ZM9.35858 2.85858L8.35858 3.85858L8.64142 4.14142L9.64142 3.14142L9.35858 2.85858ZM14.5 2.8H9.5V3.2H14.5V2.8ZM15.6414 3.85858L14.6414 2.85858L14.3586 3.14142L15.3586 4.14142L15.6414 3.85858ZM5.8 19C5.8 20.2105 6.78954 21.2 8 21.2V20.8C7.01046 20.8 6.2 19.9895 6.2 19H5.8ZM5.8 7V19H6.2V7H5.8ZM18 6.8H6V7.2H18V6.8ZM18.2 19V7H17.8V19H18.2ZM16 21.2C17.2105 21.2 18.2 20.2105 18.2 19H17.8C17.8 19.9895 16.9895 20.8 16 20.8V21.2ZM8 21.2H16V20.8H8V21.2Z" fill="white" />
+    </symbol>
+    <symbol id="icon-add-img-btn" viewBox="0 0 48 48">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2V8H0V12H6V18H10V12H16V8H10V2H6ZM12 14V20H6V40C6 42.2 7.8 44 10 44H42C44.2 44 46 42.2 46
+          40V16C46 13.8 44.2 12 42 12H35.66L32 8H18V14H12ZM26 38C31.52 38 36 33.52 36 28C36 22.48 31.52 18
+          26 18C20.48 18 16 22.48 16 28C16 33.52 20.48 38 26 38ZM26 34C22.68 34 20 31.32 20 28C20 24.68 22.68
+          22 26 22C29.32 22 32 24.68 32 28C32 31.32 29.32 34 26 34Z" />
+    </symbol>
+    <symbol id="loading-placeholder" viewBox="0 0 100 100">
+      <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(0 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(36 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.1s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(72 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.2s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(108 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.3s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(144 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.4s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(180 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.5s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(216 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.6s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(252 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.7s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(288 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.8s' repeatCount='indefinite' />
+      </rect>
+      <rect x='46.5' y='40' width='7' height='20' rx='5' ry='5' fill='rgba(44,44,44,0.6)' transform='rotate(324 50 50) translate(0 -30)'>
+        <animate attributeName='opacity' from='1' to='0' dur='1s' begin='0.9s' repeatCount='indefinite' />
+      </rect>
+    </symbol>
+    <symbol id="error-placeholder" viewBox="0 0 64 64">
+      <defs>
+        <linearGradient y2="161.29" x2="0" y1="218.22" gradientUnits="userSpaceOnUse" id="0">
+          <stop stop-color="#c52828" />
+          <stop offset="1" stop-color="#ff5454" />
+        </linearGradient>
+      </defs>
+      <g transform="matrix(.92857 0 0 .92857-666.94-144.37)">
+        <circle r="28" cy="189.93" cx="752.7" fill="url(#0)" />
+        <g fill="#fff" fill-opacity=".851">
+          <path d="m739.54 180.23c0-2.166 1.756-3.922 3.922-3.922 2.165 0 3.922 1.756 3.922 3.922 0 2.167-1.756 3.923-3.922 3.923-2.166 0-3.922-1.756-3.922-3.923m17.784 0c0-2.166 1.758-3.922 3.923-3.922 2.165 0 3.922 1.756 3.922 3.922 0 2.167-1.756 3.923-3.922 3.923-2.166 0-3.923-1.756-3.923-3.923" />
+          <path d="m766.89 200.51c-2.431-5.621-8.123-9.253-14.502-9.253-6.516 0-12.242 3.65-14.588 9.3-.402.967.056 2.078 1.025 2.48.238.097.485.144.727.144.744 0 1.45-.44 1.753-1.17 1.756-4.229 6.107-6.96 11.08-6.96 4.864 0 9.189 2.733 11.02 6.965.416.962 1.533 1.405 2.495.989.961-.417 1.405-1.533.989-2.495" />
+        </g>
+      </g>
+    </symbol>
+  </svg>
+</template>
+<script>
+export default {
+  name: 'Sprite',
+}
+</script>
+<style></style>

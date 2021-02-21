@@ -1,0 +1,31 @@
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.placeholder--area {
+  font-family: 'PTAstraSans', 'Arial', sans-serif;
+  font-size: 24px;
+  line-height: 1.3;
+
+  max-width: 100%;
+  padding: 8px 10px;
+}
+
+.placeholder--image {
+  display: flex;
+
+  width: 80%;
+  height: 80%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder--image svg {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,26 @@
+@use 'utils/ally-hidden';
+
+@use 'common/body';
+@use 'common/fonts';
+@use 'common/container';
+
+@use 'transitions/fade';
+
+@use 'blocks/app';
+
+@use 'blocks/grid-select';
+@use 'blocks/layout';
+@use 'blocks/area';
+
+@use 'blocks/placeholder';
+@use 'blocks/add-btn';
+@use 'blocks/choose-elem';
+
+@use 'blocks/element';
+@use 'blocks/delete-btn';
+// @use 'blocks/title';
+// @use 'blocks/text';
+
+// @use 'blocks/image';
+@use 'blocks/add-img-btn';
+@use 'blocks/img-upload';

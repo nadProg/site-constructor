@@ -1,0 +1,40 @@
+.add-btn {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 0;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  cursor: pointer;
+  transition: box-shadow .3s, opacity .3s;
+  transform: translate(50%, -50%);
+
+  opacity: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #fff;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+  opacity: 1;
+
+  box-shadow: 0 0 10px 0 rgba(128, 204, 240, 1);
+}
+
+.area:hover .add-btn,
+.area:focus .add-btn {
+  opacity: 1;
+}
+
+.area--content .add-btn {
+  top: 100%;
+  right: 50%;
+}

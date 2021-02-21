@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <Sprite class="ally-hidden" role="presentation" />
+    <div class="container">
+      <h1 class="ally-hidden">Site Constructor</h1>
+      <Selector />
+      <Layout />
+    </div>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import store from './store/store';
+
+import Sprite from './components/Sprite.vue';
+import Layout from './components/Layout.vue';
+import Selector from './components/Selector.vue';
 
 export default {
-  name: 'App',
+  name: 'Constructor',
+  store,
   components: {
-    HelloWorld
-  }
+    Sprite,
+    Layout,
+    Selector,
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

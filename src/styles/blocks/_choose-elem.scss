@@ -1,0 +1,68 @@
+.choose-elem {
+  font-size: 16px;
+  line-height: 18px;
+
+  position: absolute;
+  z-index: 5;
+  right: -20px;
+  bottom: 0;
+
+  display: flex;
+  overflow: hidden;
+
+  transform: translateY(50%);
+
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, .1);
+}
+
+.choose-elem__btn {
+  font-family: 'PTAstraSans', 'Arial', sans-serif;
+
+  width: 133px;
+  margin: 0;
+  padding: 12px;
+
+  cursor: pointer;
+  transition: background-color .3s;
+
+  color: #3a3e46;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.choose-elem__btn + .choose-elem__btn {
+  border-left: 1px solid #cecece;
+}
+
+.choose-elem__btn:hover,
+.choose-elem__btn:focus {
+  background-color: #eee;
+}
+
+$choose-elem-shift: 15%;
+
+.area--content .choose-elem {
+  top: auto;
+  right: 50%;
+  bottom: -72px;
+
+  transform: translateX(50%);
+}
+
+.layout--blog .layout__area--content-1 .choose-elem {
+  transform: translateX(50% + $choose-elem-shift);
+}
+
+.layout--blog .layout__area--content-2 .choose-elem {
+}
+
+.layout--shop .layout__area--content-1 .choose-elem {
+  transform: translateX(50% + $choose-elem-shift);
+}
+
+.layout--shop .layout__area--content-3 .choose-elem {
+  transform: translateX(50% - $choose-elem-shift);
+}

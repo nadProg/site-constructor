@@ -1,0 +1,79 @@
+$transition-duration: .3s;
+
+.grid-select {
+  margin-bottom: 50px;
+  padding: 20px 30px 40px;
+
+  border-radius: 16px;
+  background: #f8f8f8;
+}
+
+.grid-select__header {
+  font-size: 48px;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.grid-select__row {
+  display: flex;
+}
+
+.grid-select__btn-wrapper {
+  margin-right: 15px;
+}
+
+.grid-select__btn {
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 20px 20px;
+
+  cursor: pointer;
+  transition: background-color $transition-duration, color $transition-duration, opacity $transition-duration, box-shadow $transition-duration, transform $transition-duration;
+  text-align: left;
+
+  opacity: 1;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.grid-select__btn svg {
+  width: 240px;
+  height: 132px;
+
+  transition: stroke $transition-duration;
+
+  fill: transparent;
+  stroke: #3a3e46;
+}
+
+.grid-select__btn span {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.grid-select__radio:checked + .grid-select__btn:hover {
+  cursor: initial;
+}
+
+.grid-select__radio:not(:checked) + .grid-select__btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 5px #80ccf0;
+}
+
+.grid-select__btn:hover,
+.grid-select__radio:focus + .grid-select__btn,
+.grid-select__radio:checked + .grid-select__btn {
+  color: #fff;
+  background-color: #80ccf0;
+}
+
+.grid-select__btn:hover svg,
+.grid-select__radio:focus + .grid-select__btn svg,
+.grid-select__radio:checked + .grid-select__btn svg {
+  stroke: #fff;
+}
