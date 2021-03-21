@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ?
-    '/site-constructor/' :
+    '/vue-site-constructor/' :
     '/',
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');
