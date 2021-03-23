@@ -4,7 +4,7 @@
       <div class="placeholder placeholder--area" v-if="isAreaEmpty">{{placeholder}}</div>
     </transition>
     <TransitionElements class="elements-list" :class="wrapperClassList">
-      <Element v-for="(model, index) of elements" :element-model="model" :area-index="areaIndex" :element-index="index" :key="model.id" />
+      <Element v-for="(model, index) of elements" :element-model="model" :area-id="areaModel.id" :element-index="index" :key="model.id" />
     </TransitionElements>
     <button type="button" class="add-btn" @click="chooseElemMode=!chooseElemMode">
       <svg width="40" height="40">
@@ -12,7 +12,7 @@
       </svg>
     </button>
     <transition name="fade">
-      <ChooseElement class="choose-elem" :area-index="areaIndex" v-if="chooseElemMode" @destroy-choose-element="chooseElemMode=false" />
+      <ChooseElement class="choose-elem" :area-id="areaModel.id" v-if="chooseElemMode" @destroy-choose-element="chooseElemMode=false" />
     </transition>
   </div>
 </template>

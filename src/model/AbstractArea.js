@@ -23,4 +23,8 @@ export default class AbstractArea {
   set idCount(idCount) {
     this.__proto__.constructor._idCount = idCount;
   }
+
+  static resetIdCount() {
+    this._idCount = 0;
+  }
 }

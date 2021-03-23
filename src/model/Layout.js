@@ -1,12 +1,35 @@
-import { HeaderArea, ContentArea, FooterArea} from './Areas';
+import AreaFactory from './AreaFactory';
+
+const areaFactory = new AreaFactory();
 
 export default class Layout {
-  constructor() {
+  constructor(config) {
     this.areas = [];
-    this.areas.push(new HeaderArea());
-    this.areas.push(new ContentArea());
-    this.areas.push(new ContentArea());
-    this.areas.push(new ContentArea());
-    this.areas.push(new FooterArea());
+
+    areaFactory.resetIDCounts();
+
+    config.forEach(item => {
+      if (typeof item === 'string') {
+        this.addArea(item)
+      } else {
+        for (let i = 0; i < item.amount; i++) {
+          this.addArea(item.type)
+        }
+      }
+    })
+  }
+
+  areaGetter(id) {
+    return `_area-${id}`
+  }
+
+  setAreaGetter(area) {
+    this[this.areaGetter(area.id)] = area;
+  }
+
+  addArea(type) {
+    const area = areaFactory.create(type);
+    this.areas.push(area);
+    this.setAreaGetter(area);
   }
 }

@@ -20,7 +20,7 @@ export default {
     ]
   }),
   props: {
-    areaIndex: Number
+    areaId: String
   },
   mounted() {
     this.destroy = this.destroy.bind(this);
@@ -36,7 +36,7 @@ export default {
     payload(elementOptions) {
       return ({
         options: elementOptions,
-        areaIndex: this.areaIndex
+        areaId: this.areaId
       })
     },
     destroy() {

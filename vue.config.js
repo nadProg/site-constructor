@@ -18,5 +18,5 @@ module.exports = {
           plugins: [{ removeDimensions: false }, { removeViewBox: false }]
         }
       });
-  },
-};
+  }
+}

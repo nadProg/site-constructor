@@ -26,7 +26,7 @@ export default {
   },
   props: {
     elementModel: Object,
-    areaIndex: Number,
+    areaId: String,
     elementIndex: Number
   },
   computed: {
@@ -55,7 +55,7 @@ export default {
     },
     payload() {
       return ({
-        areaIndex: this.areaIndex,
+        areaId: this.areaId,
         elementIndex: this.elementIndex,
       })
     }

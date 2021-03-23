@@ -4,29 +4,34 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 import Layout from './../model/Layout';
-import ElementFactory from './../model/ElementFactory';
+import Element from './../model/Element';
+
+const layoutConfig = ['header', {type: 'content', amount: 3}, 'footer'];
 
 export default new Vuex.Store({
   state: {
-    layoutModel: new Layout(),
+    layoutModel: new Layout(layoutConfig),
     layoutTypes: ['landing', 'blog', 'shop'],
     activeLayout: 'shop',
   },
   getters: {
     areas: state => state.layoutModel.areas,
+    areaByID: state => areaId => {
+      return state.layoutModel[`_area-${areaId}`];
+    }
   },
   mutations: {
     setActiveLayout(state, type) {
       Vue.set(state, 'activeLayout', type);
     },
-    addElementToArea(state, { areaIndex, options }) {
-      state.layoutModel.areas[areaIndex].elements.push(new ElementFactory(options));
+    addElementToArea(state, { areaId, options }) {
+      this.getters.areaByID(areaId).elements.push(new Element(options))
     },
-    updateElementContent(state, { areaIndex, elementIndex, newContent }) {
-      Vue.set(state.layoutModel.areas[areaIndex].elements[elementIndex], 'content', newContent);
+    updateElementContent(state, { areaId, elementIndex, newContent }) {
+      Vue.set(this.getters.areaByID(areaId).elements[elementIndex], 'content', newContent);
     },
-    deleteElementFromArea(state, { areaIndex, elementIndex }) {
-      state.layoutModel.areas[areaIndex].elements.splice(elementIndex, 1);
+    deleteElementFromArea(state, { areaId, elementIndex }) {
+       this.getters.areaByID(areaId).elements.splice(elementIndex, 1);
     }
   }
 });
