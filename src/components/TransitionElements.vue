@@ -1,6 +1,16 @@
 <template>
-  <transition-group appear name="elements-list" tag="div" @before-enter="beforeTransition" @enter="transition" @after-enter="afterTransition" @before-leave="beforeTransition" @leave="transition" @after-leave="afterTransition">
-    <slot></slot>
+  <transition-group
+    appear
+    name="elements-list"
+    tag="div"
+    @before-enter="beforeTransition"
+    @enter="transition"
+    @after-enter="afterTransition"
+    @before-leave="beforeTransition"
+    @leave="transition"
+    @after-leave="afterTransition"
+  >
+    <slot />
   </transition-group>
 </template>
 <script>
@@ -12,7 +22,7 @@ export default {
   },
   methods: {
     beforeTransition() {
-      this.$el.children.forEach(el => el.style.height = `${el.scrollHeight}px`);
+      this.$el.children.forEach((el) => el.style.height = `${el.scrollHeight}px`);
       this.setScrollHeight();
     },
     transition() {
@@ -24,15 +34,15 @@ export default {
     },
     postAfterTransition() {
       this.$el.style.height = '';
-      this.$el.children.forEach(el => el.style.height = '');
+      this.$el.children.forEach((el) => el.style.height = '');
     },
     setScrollHeight() {
       this.$el.style.maxHeight = 0;
       this.$el.style.height = `${this.$el.scrollHeight}px`;
       this.$el.style.maxHeight = '';
-    }
+    },
   },
-}
+};
 </script>
 <style>
 .elements-list-move {

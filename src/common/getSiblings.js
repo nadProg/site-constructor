@@ -1,6 +1,6 @@
 export default function getSiblings(e) {
   // for collecting siblings
-  let siblings = [];
+  const siblings = [];
   // if no parent, return no sibling
   if (!e.parentNode) {
     return siblings;

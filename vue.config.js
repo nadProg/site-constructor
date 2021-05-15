@@ -15,8 +15,8 @@ module.exports = {
       .loader('vue-svg-loader')
       .options({
         svgo: {
-          plugins: [{ removeDimensions: false }, { removeViewBox: false }]
-        }
+          plugins: [{ removeDimensions: false }, { removeViewBox: false }],
+        },
       });
-  }
-}
+  },
+};
