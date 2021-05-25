@@ -1,4 +1,4 @@
-$transition-duration: .3s;
+$transition-duration: 0.3s;
 
 .grid-select {
   margin-bottom: 50px;
@@ -32,7 +32,9 @@ $transition-duration: .3s;
   padding: 10px 20px 20px;
 
   cursor: pointer;
-  transition: background-color $transition-duration, color $transition-duration, opacity $transition-duration, box-shadow $transition-duration, transform $transition-duration;
+  transition: background-color $transition-duration, color $transition-duration,
+    opacity $transition-duration, box-shadow $transition-duration,
+    transform $transition-duration;
   text-align: left;
 
   opacity: 1;
@@ -65,15 +67,15 @@ $transition-duration: .3s;
   box-shadow: 0 0 5px #80ccf0;
 }
 
-.grid-select__btn:hover,
-.grid-select__radio:focus + .grid-select__btn,
 .grid-select__radio:checked + .grid-select__btn {
   color: #fff;
   background-color: #80ccf0;
 }
 
-.grid-select__btn:hover svg,
-.grid-select__radio:focus + .grid-select__btn svg,
 .grid-select__radio:checked + .grid-select__btn svg {
   stroke: #fff;
+}
+
+.grid-select__radio:focus + .grid-select__btn {
+  box-shadow: 0 0 10px 0 #80ccf0;
 }

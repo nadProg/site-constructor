@@ -7,7 +7,7 @@
       name="grid"
       :value="value"
       :checked="checked"
-      @change="$emit('change')"
+      @click="$emit('click')"
     >
     <label
       class="grid-select__btn"

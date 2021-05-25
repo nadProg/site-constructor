@@ -10,7 +10,7 @@
         :value="input.value"
         :label="input.label"
         :checked="input.value === value"
-        @change="setValue(input.value)"
+        @click="setValue(input.value)"
       />
     </template>
   </BaseSelector>
@@ -22,14 +22,22 @@ import { mapState, mapMutations } from 'vuex';
 import BaseSelector from './BaseSelector.vue';
 import BaseSelectorTab from './BaseSelectorTab.vue';
 
+import _ from 'lodash';
+
 export default {
   name: 'TheSelector',
   components: {
     BaseSelector,
     BaseSelectorTab,
   },
+  data: () => ({
+    debounceTime: 300,
+  }),
   computed: {
     ...mapState('selector', ['inputs', 'value']),
+  },
+  created() {
+    this.setValue = _.debounce(this.setValue, this.debounceTime);
   },
   methods: {
     ...mapMutations('selector', ['setValue']),
